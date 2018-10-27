@@ -15,4 +15,13 @@
         <item>Aspidosperma quebracho blanco</item>
         <item>Populus spp.</item>
     </string-array>
+    <string-array name="speciesList">
+        <item>Please select a species ...</item>
+        <item>Species Nro 1</item>
+        <item>Species Nro 2</item>
+        <item>Species Nro 3</item>
+        <item>Species Nro 4</item>
+        <item>Species Nro 5</item>
+        <item>Species Nro 6</item>
+    </string-array>
 </resources>

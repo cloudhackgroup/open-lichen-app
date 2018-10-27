@@ -1,10 +1,12 @@
-package org.cloudhack.openlichen;
+package org.cloudhack.openlichen.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.mapbox.mapboxsdk.Mapbox;
 import com.mapbox.mapboxsdk.maps.MapView;
+
+import org.cloudhack.openlichen.R;
 
 public class MapActivity extends AppCompatActivity {
 

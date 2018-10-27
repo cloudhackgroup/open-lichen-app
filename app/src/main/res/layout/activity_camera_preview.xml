@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    tools:context=".CameraPreviewActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        app:fabCustomSize="60dp"
+        android:onClick="takePicture"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:src="@drawable/ic_take_photo_icon" />
+
+    <RelativeLayout
+        android:id="@+id/no_permission"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mad"
+            android:textSize="50sp"
+            android:textAlignment="center"
+            android:paddingBottom="100dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/we_need_permissions"
+            android:textSize="20sp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:textAlignment="center"
+            android:paddingTop="56dp"
+            />
+
+    </RelativeLayout>
+
+    <io.fotoapparat.view.CameraView
+        android:id="@+id/camera_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</RelativeLayout>

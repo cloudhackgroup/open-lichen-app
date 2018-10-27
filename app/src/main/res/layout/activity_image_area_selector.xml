@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayoutEditor"
+    tools:context=".ui.ImageAreaSelectorActivity">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/forest_tile"
+        />
+    <Spinner
+        android:id="@+id/specimen_selection"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:entries="@array/hosts"
+        android:background="@android:color/white"
+        android:layout_height="60dp">
+    </Spinner>
+
+</RelativeLayout>
